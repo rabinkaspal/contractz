@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -10,10 +11,11 @@ export default function Home() {
                 negotiations. Significantly reduce legal costs and accelerat contract
                 reviews, allowing businesses to manage contracts more efficiently.
             </span>
-
-            <Button className="cursor-pointer bg-orange-400 text-white hover:bg-orange-300 hover:text-white">
-                Get Started
-            </Button>
+            <Link href="/dashboard">
+                <Button className="cursor-pointer bg-orange-400 text-white hover:bg-orange-300 hover:text-white">
+                    Get Started
+                </Button>
+            </Link>
         </main>
     );
 }
